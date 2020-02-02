@@ -1,0 +1,62 @@
+body {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+font-size: 15px; line-height: 1.5;
+padding: 0; margin: 0;
+background-color: #E8DDE1;}
+
+.pocetak {width: 88%;
+margin: auto;
+overflow: hidden;}
+
+header {background: #584B50;
+color: white;
+padding-top: 30px;
+min-height: 70px;
+border-bottom: #FC9AC0 3px solid;}
+
+header a {color: white;
+text-decoration: none;}
+
+header ul {margin: 0; padding: 0;font-size: 16px;}
+header li {display: inline;
+padding: 0 20px 0 20px;}
+
+header #naslov {float: left;}
+
+header h1 {margin: 0;}
+header nav {float: right;
+margin-top: 10px;}
+
+#fotka{min-height: 400px;
+background: url('../Nedelja1/img/background.jpg') center; 
+text-align: center;
+color: #584B50;}
+
+#fotka h1{
+font-size: 55px;
+margin-bottom: 10px;}
+
+#fotka p {font-size: 20px;}
+
+button {background: #584B50;
+border: 25;
+color: #E8DDE1;
+padding-left: 20px;
+padding-right: 20px;}
+
+section{margin-top: 20px;
+padding: 0;}
+
+#info1 {background: #FEB3CE;
+text-align: center;}
+
+#info2 {background: #FFBED5;
+text-align: center;}
+
+#info3 {background: #FEC3D8; 
+text-align: center;}
+
+section {color: #252525;}
+
+footer {padding: 20px;
+margin-top: 20px;
+text-align: center;}
