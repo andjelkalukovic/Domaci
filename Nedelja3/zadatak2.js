@@ -1,5 +1,5 @@
-function pizza (){
-    let r=10, cena=500;
+function pizza (r, cena){
     let P=Math.PI*r**2;
-    return cena/P;
-}
+    let cenaPoCm=cena/P;
+    console.log (`Cena pice po cm kvadratnom je ${cenaPoCm}`);
+} pizza(15,600);
