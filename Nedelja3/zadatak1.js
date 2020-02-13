@@ -1,4 +1,4 @@
-function broj (){
-    let br=8, br=62, br=14;
-    return (Math.max (br));
+function broj (a,b,c){
+    return Math.max (a,b,c);
 }
+console.log (broj(8,42,14));
