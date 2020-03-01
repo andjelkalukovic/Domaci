@@ -1,3 +1,43 @@
+body {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #eee8e8;
+text-align: center;}
+
+button {background-color: transparent;
+    border: 3px solid rgb(6, 1, 29);
+    color: rgb(6, 1, 29);
+    padding: 10px 47px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;}
+
+select {
+    border: 3px solid rgb(6, 1, 29);
+    color: rgb(6, 1, 29);
+    background: #d8d1d1;
+    padding: 10px 47px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+input {
+    border: 3px solid rgb(6, 1, 29);
+    color: rgb(6, 1, 29);
+    background: #d8d1d1;
+    padding: 10px 47px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.prihodi {
+    background: #a0b0e7;
+}
+.rashodi {
+    background: #ecb4b4;
+}
+.ukupno {
+    font-size: 20px;
+}
+
 #procenat {
     display: none;
 }
