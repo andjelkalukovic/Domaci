@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aplikacija za izracunavanje zarade</title>
+    <link rel="stylesheet" href="domaci5.css">
+</head>
+<body>
+    <header>
+        <h1>Aplikacija za izracunavanje mesecnih prihoda i rashoda</h1>
+    </header>
+    <div class="ukupno">
+        <p>Ukupni prihodi: <span id="ukupni-prihodi"></span></p>
+        <p>Ukupni rashodi: <span id="ukupni-rashodi"></span>
+        <span id="procenat-rashoda"></span></p>
+        <p>Ukupno: <span id="trenutno-stanje"></span></p>
+    </div>
+    <form class="wrapper">
+        <select name="dropdown" id="zarada" required>
+            <option value="" selected disabled>Izabrati:</option>
+            <option value="Prihod" >Prihod</option>
+            <option value="Rashod">Rashod</option>
+        </select>
+        <input type="text" id="opis" placeholder="Opis" required>
+        <input type="number" id="iznos" placeholder="Iznos" min="1" required>
+        <!-- <input type="number" id="procenat" placeholder="Procenat" min="1" > -->
+        <button type="button "class="dodati">Dodati</button>
+    </form>
+    <div class="prihodi">
+        <h3>Prihodi:</h3>
+        <ul class="lista-prihoda">
+        </ul>
+    </div>
+    <div class="rashodi">
+        <h3>Rashodi:</h3>
+        <ul class="lista-rashoda">
+        </ul>
+    </div>
+    <script src="domaci5.js"></script>
+</body>
+</html>
