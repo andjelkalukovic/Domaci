@@ -5,8 +5,6 @@ export const getPastLaunches=()=>{
     return axios.get(`${SPACEX_BASE_URL}/launches/past`);
 }
 
-const COMPANY_INFO='https://api.spacexdata.com/v3';
-
 export const getInfo=()=>{
-    return axios.get(`${COMPANY_INFO}/info`);
+    return axios.get(`${SPACEX_BASE_URL}/info`);
 }
