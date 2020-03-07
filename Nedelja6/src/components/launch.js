@@ -37,23 +37,4 @@ const Launch = (launch) => {
     return div;
 }
 
-
-const Info = (info)=>{
-    let {
-        name,
-        summary
-    }= info;
-    const div=document.createElement('div');
-    div.className='header-info';
-    let p1=document.createElement('p');
-    p1.innerHTML=`${name}`
-
-    let p2=document.createElement('p')
-    p2.innerHTML=`${summary}`;
-    div.appendChild(p1);
-    div.appendChild(p2);
-}
-
-
-
-export {Launch, Info};
+export {Launch};
