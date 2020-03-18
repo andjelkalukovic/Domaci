@@ -8,8 +8,9 @@ class Wrapper extends React.Component{
         this.state = {
             ime: '',
             broj: '',
-            kontakti:[],
-            poruka:''
+            kontakti: [],
+            poruka:'',
+           // filtrirani:[]
         }
     }
 
@@ -54,6 +55,14 @@ class Wrapper extends React.Component{
         })
     }
 
+    // inputFilter(e){
+    //     let filtrirani= this.state.kontakti.filter((kontakt)=> kontakt.ime.includes(e.target.value));
+    //     this.setState({
+    //         filtrirani:filtrirani
+    //     })
+
+    // }
+
     render() {
         
         return(
@@ -67,11 +76,10 @@ class Wrapper extends React.Component{
                 <Poruka poruka={this.state.poruka}></Poruka>
             </div>
             <div>
-                <>
                 <h4>Листа контакта:</h4>
                 <Kontakti kontakti={this.state.kontakti}></Kontakti>
-                </>
             </div>
+            {/* <input type="text" onChange={(e)=> this.inputFilter(e)} placeholder="Пронађи контакт"></input> */}
             </>
         )
     }
