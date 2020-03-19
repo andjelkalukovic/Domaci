@@ -10,7 +10,7 @@ class Wrapper extends React.Component{
             broj: '',
             kontakti: [],
             poruka:'',
-           // filtrirani:[]
+           filtriraniC:[]
         }
     }
 
@@ -41,12 +41,33 @@ class Wrapper extends React.Component{
             this.setState({
                 poruka:''
             })
+
+            if (this.state.kontakti.find(el=>el.ime === this.state.ime)){
+                if (window.confirm ("Да ли желите да замените контакт?")){
+                    let kontakt = {
+                        ime: this.state.ime,
+                        broj: this.state.broj
+                    }
+                    let i= this.state.kontakti.findIndex(el=> el.ime === this.state.ime);
+                    this.state.kontakti.splice(i,1,kontakt);
+                    this.setState({
+                        kontakti:this.state.kontakti,
+                        filtriraniC: this.state.kontakti
+                    })
+                }
+                else {return}
+                
+            } else {
                 let kontakt = {
                     ime: this.state.ime,
                     broj: this.state.broj
                 }
                 this.state.kontakti.push(kontakt);
-         }}
+                this.setState({
+                    kontakti:this.state.kontakti,
+                        filtriraniC: this.state.kontakti
+                })
+     } }}
 
     reset() {
         this.setState({
@@ -55,13 +76,13 @@ class Wrapper extends React.Component{
         })
     }
 
-    // inputFilter(e){
-    //     let filtrirani= this.state.kontakti.filter((kontakt)=> kontakt.ime.includes(e.target.value));
-    //     this.setState({
-    //         filtrirani:filtrirani
-    //     })
+    inputFilter(e){
+        let filtrirani= this.state.kontakti.filter((kontakt)=> kontakt.ime.includes(e.target.value));
+        this.setState({
+            filtriraniC:filtrirani
+        })
 
-    // }
+    }
 
     render() {
         
@@ -79,7 +100,11 @@ class Wrapper extends React.Component{
                 <h4>Листа контакта:</h4>
                 <Kontakti kontakti={this.state.kontakti}></Kontakti>
             </div>
-            {/* <input type="text" onChange={(e)=> this.inputFilter(e)} placeholder="Пронађи контакт"></input> */}
+            <div>
+            <h4>Пронађи контакт:</h4>
+            <input type="text" onChange={(e)=> this.inputFilter(e)} placeholder="Пронађи контакт"></input>
+            <Kontakti kontakti={this.state.filtriraniC}></Kontakti>
+            </div>
             </>
         )
     }
