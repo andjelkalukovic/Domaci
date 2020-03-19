@@ -1,0 +1,22 @@
+.stori {
+    font-family: 'Courier New', Courier, monospace;
+    border: 3px groove #b8d3f7;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    display: inline-block;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #02306b;
+    text-align: center;
+}
+.app {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
