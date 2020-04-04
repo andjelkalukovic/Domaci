@@ -1,2 +1,2 @@
 # Domaci
-Domaci radovi tokom IT Bootcamp Frontend Developmet kursa.
+Domaci radovi tokom IT Bootcamp Frontend Development kursa.
